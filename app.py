@@ -160,7 +160,7 @@ def process_image():
     return send_file(io.BytesIO(img_encoded.tobytes()), mimetype='image/jpeg')
 
 # Iniciar ngrok y Flask
-from pyngrok import ngrok, conf
+#from pyngrok import ngrok, conf
 #conf.get_default().auth_token = "2xi4CaOgnyCNHCbUulyARbFjLjm_31UWdgoTuDNST2pwaxVEQ"
 #public_url = ngrok.connect(5000)
 #print("\n🚀 Tu API pública:", public_url)
