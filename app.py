@@ -9,7 +9,7 @@ Original file is located at
 
 # Flask API para Neural Style Transfer sobre objetos detectados con YOLOv8 (Colab con pyngrok)
 
-!pip install flask flask-cors pyngrok ultralytics torch torchvision --quiet
+
 
 from flask import Flask, request, send_file
 from flask_cors import CORS
