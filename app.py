@@ -33,7 +33,7 @@ CORS(app)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Configurar modelo y estilo
-graffiti_dir = "/content/drive/MyDrive/DATASET_PDI/GRAFFITIS2"
+graffiti_dir = "./graffiti_dataset"
 
 def image_loader_from_array(img_array):
     transform = transforms.Compose([
