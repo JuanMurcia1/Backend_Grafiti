@@ -161,7 +161,9 @@ def process_image():
 
 # Iniciar ngrok y Flask
 from pyngrok import ngrok, conf
-conf.get_default().auth_token = "2xi4CaOgnyCNHCbUulyARbFjLjm_31UWdgoTuDNST2pwaxVEQ"
-public_url = ngrok.connect(5000)
-print("\n🚀 Tu API pública:", public_url)
-app.run()
+#conf.get_default().auth_token = "2xi4CaOgnyCNHCbUulyARbFjLjm_31UWdgoTuDNST2pwaxVEQ"
+#public_url = ngrok.connect(5000)
+#print("\n🚀 Tu API pública:", public_url)
+#app.run()
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
