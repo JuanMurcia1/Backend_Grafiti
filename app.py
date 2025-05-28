@@ -13,7 +13,7 @@ Original file is located at
 
 from flask import Flask, request, send_file
 from flask_cors import CORS
-from pyngrok import ngrok
+#from pyngrok import ngrok
 from PIL import Image
 import io
 import os
